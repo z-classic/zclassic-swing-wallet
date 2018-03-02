@@ -742,11 +742,11 @@ extends WalletTabPanel
 				// Open block explorer
 				Log.info("Transaction ID for block explorer is: " + TXID);
 				// TODO: code duplication with transactions table
-				String urlPrefix = "https://zcl-explorer.com/tx/";
+				String urlPrefix = "https://explorer1.zclassic.org/tx/";
 				if (installationObserver.isOnTestNet())
 				{
 					//TODO zcl testnet explorer
-					urlPrefix = "https://explorer-testnet.zen-solutions.io/tx/";
+					urlPrefix = "https://testnet.zclassic.org/tx/";
 				}
 				Desktop.getDesktop().browse(new URL(urlPrefix + TXID).toURI());
 			}
